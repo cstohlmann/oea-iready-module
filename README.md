@@ -1,8 +1,6 @@
 # iReady Module
 
-<strong><em>[THIS SECTION NEEDS UPDATING]</strong></em>
-
-[iReady](https://www.curriculumassociates.com/programs/i-ready-assessment) offers a variety of assessments for K-12 students, which tracks learning progress in reading and mathematics. This iReady OEA module, <strong><em>[SHOULD WE INCLUDE THIS HERE?]</strong></em> developed by the [Fresno Unified School District](https://www.fresnounified.org/) in Fresno, California USA, provides students learning progress data and subsequent breakdowns of assessment material and scores. Data is retrieved through <strong><em>[INSERT HERE]()</strong></em> which can be either manually downloaded or [automated via SFTP delivery](). iReady Assessment Reports data will enable education leaders to see the impact of certain pedagogies/teaching-styles on student learning. 
+[iReady](https://www.curriculumassociates.com/programs/i-ready-assessment) offers a variety of assessments for K-12 students, which tracks learning progress in reading and mathematics. This iReady OEA module provides students learning progress data, subsequent breakdowns of assessment material, and scores. Data is retrieved from on-premises servers through the use of pipelines; this data is expected to be manually downloaded and uploaded to these servers. iReady Assessment Reports data will enable education leaders to see the results of pedagogical practices impactfulness on student learning. 
 
 ## Problem Statement and Module Impact
 
@@ -34,12 +32,10 @@ See the [module test data page](https://github.com/microsoft/OpenEduAnalytics/tr
 
 ## Module Components
 
-<strong><em>[LINKS IN THIS SECTION NEED TO BE UPDATED]</strong></em>
-
 Out-of-the box assets for this OEA module include: 
-1. [Test Data](https://github.com/microsoft/OpenEduAnalytics/tree/main/modules/Digital_Learning_Apps_and_Platforms/iReady/test_data): Artificially generated test data which supports the module pipeline and Power BI template. Test data matches the [iReady Diagnostic and Personalized Instruction Assessment Reports]() format exactly.
+1. [Test Data](https://github.com/microsoft/OpenEduAnalytics/tree/main/modules/Digital_Learning_Apps_and_Platforms/iReady/test_data): Artificially generated test data which supports the module pipeline and Power BI template. Test data matches the iReady Diagnostic and Personalized Instruction Assessments data format exactly.
 2. [Pipeline Template](https://github.com/microsoft/OpenEduAnalytics/tree/main/modules/Digital_Learning_Apps_and_Platforms/iReady/pipeline): One main pipeline template which lands data into Stage 1 and processes into Stage 2. Stage 2 data is then made available via a serveless SQL endpoint.
-    - <strong><em>[INCLUDE DESCRIPTION OF PRODUCTION-LEVEL DATA INGESTION SUB-PIPELINE??]</strong></em>
+    - One sub-pipeline template that extracts on-premises iReady production data, and lands the data into Stage 1 of the data lake.
 3. [Notebooks](https://github.com/microsoft/OpenEduAnalytics/tree/main/modules/Digital_Learning_Apps_and_Platforms/iReady/notebook): 
     - [iReady_py.ipynb](https://github.com/microsoft/OpenEduAnalytics/blob/main/modules/Digital_Learning_Apps_and_Platforms/iReady/notebook/iReady_py.ipynb): A module python class notebook that defines the data schemas and basic functions of data ingestion and processing from Stage 1 to Stage 2.
     - [iReady_module_ingestion.ipynb](https://github.com/microsoft/OpenEduAnalytics/blob/main/modules/Digital_Learning_Apps_and_Platforms/iReady/notebook/iReady_module_ingestion.ipynb): Module data ingestion notebook which depends on the the module class. The pipeline template automatically uploads this notebook upon importing. 
@@ -53,15 +49,15 @@ Dashboard Explanation  | Dashboard Usage Summary
 
 ## Additional Information
 
-<strong><em>[MAY WANT TO UPDATE, OTHERWISE REMOVE]</strong></em>
-
-While this module leverages iReady [Participation Reports](https://support.clever.com/hc/s/articles/360049642311), more data is available via the [Clever API](https://dev.clever.com/docs/api-overview) feed.
-
-<strong><em>[UPDATE]</strong></em>
+While this module leverages iReady [Diagnostic](https://www.curriculumassociates.com/programs/i-ready-assessment/diagnostic) and [Instruction Assessments](https://www.curriculumassociates.com/programs/i-ready-learning/personalized-instruction), more data is available via different [iReady Assessment packages](https://www.curriculumassociates.com/programs/i-ready-assessment).
 
 | Resource | Description |
 | --- | --- |
-| [Overview of iReady]() | Intro to iReady, what it can do, and how it can be used. |
+| [Overview of iReady](https://www.curriculumassociates.com/) | Intro to iReady, what it can do, and how it can be used. |
+| [iReady Assessment Products](https://www.curriculumassociates.com/programs/i-ready-assessment) | Overview of iReady Assessment Products offered by Curriculum Associates. |
+| [iReady Diagnostic Assessment Details](https://www.cde.state.co.us/uip/i-ready-assessment-description) | Third-party description of the applications and use of the iReady Diagnostic Assessments. |
+| [Explanation of iReady Data Migration](https://support.schooldata.net/hc/en-us/articles/230874107-i-Ready-Extract-Procedure-for-Manual-Upload) | Third-party partial setup explanation for the migration of iReady Assessment data. |
+
 
 ## Contributions from the Community
 
