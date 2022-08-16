@@ -1,6 +1,6 @@
 # iReady Module
 
-[iReady](https://www.curriculumassociates.com/programs/i-ready-assessment) offers a variety of assessments for K-12 students, which tracks learning progress in reading and mathematics. This iReady OEA module provides students learning progress data, subsequent breakdowns of assessment material, and scores. Data is retrieved from on-premises servers through the use of pipelines; this data is expected to be manually downloaded and uploaded to these servers. iReady Assessment Reports data will enable education leaders to see the results of pedagogical practices impactfulness on student learning. 
+[iReady](https://www.curriculumassociates.com/programs/i-ready-assessment) offers a variety of assessments for K-12 students, which tracks learning progress in reading and mathematics, breakdowns of assessment material, and assessment scoring. This iReady OEA module provides ingestion and processing of [Diagnostic Assessment](https://www.curriculumassociates.com/programs/i-ready-assessment/diagnostic) and [Personalized Instruction Assessment](https://www.curriculumassociates.com/programs/i-ready-learning/personalized-instruction) data. Data is retrieved from on-premises servers through the use of pipelines; this data is expected to be manually downloaded and uploaded to these servers. iReady Assessment data will enable education leaders to see the results of pedagogical practices impactfulness on student learning. 
 
 ## Problem Statement and Module Impact
 
@@ -22,11 +22,17 @@ The above instructions will setup the iReady OEA module using the [module test d
 
 ## Data Sources
 
-<strong><em>[LINKS IN THIS SECTION + DESCRIPTIONS NEED TO BE UPDATED]</strong></em>
-
-This module imports data which matches the format of the eight [iReady Assessment Reports]().
-- [Daily Participation Report](https://support.clever.com/hc/s/articles/360049642311?language=en_US#step2) Participation reports provide a daily snapshot that summarizes usage for students, teachers, and staff in your district, including those that may be inactive. 
-- [Resource Usage Report](https://support.clever.com/hc/s/articles/360049642311?language=en_US#h_7698d144-7ceb-4d63-88b8-e9ca2aa378d2) provide a daily snapshot of each resource accessed by a user on a given day and are available for active students, teachers, and staff. 
+This module imports data which matches the format of four [iReady Diagnostic and Personalized Instruction Assessment Reports](https://www.curriculumassociates.com/programs/i-ready-assessment) for both ELA and Math subjects, resulting in a total of eight tables.
+- <strong>Comprehensive Student Lesson Activity with Standards Report</strong> provides incremental assessment data on student learning per lesson completed. iReady summarizes this data by:
+    - the lesson subject area (ELA or Math), 
+    - the lesson domain (e.g. phonics, algebra), 
+    - additional lesson details (e.g. lesson grade-level), 
+    - whether a student passed or failed a particular lesson, 
+    - some forms of SIS data (school the student attends, student name, etc.), and
+    - lesson correlations with an education system's state standards.
+- <strong>Diagnostic and Instruction YTD Window</strong> provides a year-long snapshot of assessment data on student learning diagnostics. These assessments can be used to identify students who may be at risk for reading/math difficulties. The assessment data also provides test results in specific areas of student-learning domains within ELA and Math. 
+- <strong>Diagnostic Results Report</strong> provides the implications and iReady analyses of student diagnostic assessments. These include metrics used for gauging the successes/struggles of student learning (e.g. [Annual Stretch Growth Measure](https://www.curriculumassociates.com/access-and-equity/providing-a-path-to-proficiency-for-every-student)). The assessment data also provides test results in specific areas of student-learning domains within ELA and Math. 
+- <strong>Personalized Instruction by Lesson Report</strong> provides the results surrounding student personalized instruction assessments. This table essentially serves as an overview of the <em>Comprehensive Student Lesson Activity with Standards</em> tables, without the matching of state standards.
 
 See the [module test data page](https://github.com/microsoft/OpenEduAnalytics/tree/main/modules/Digital_Learning_Apps_and_Platforms/iReady/test_data) for details on data format and contents.
 
