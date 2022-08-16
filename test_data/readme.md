@@ -1,7 +1,5 @@
 # Test data
 
-<strong><em>[NEED MORE LINKS??]</strong></em>
-
 This module includes artifically generated data which matches the format of the eight [iReady Diagnostic and Personalized Instruction Assessment Reports](https://www.curriculumassociates.com/programs/i-ready-assessment) for both ELA and Math subjects.
 - <strong>Comprehensive Student Lesson Activity with Standards Report</strong> provides incremental assessment data on student learning per lesson completed. iReady summarizes this data by:
     - the lesson subject area (ELA or Math), 
