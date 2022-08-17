@@ -49,11 +49,9 @@ Out-of-the box assets for this OEA module include:
     - [iReady_module_ingestion.ipynb](https://github.com/microsoft/OpenEduAnalytics/blob/main/modules/Digital_Learning_Apps_and_Platforms/iReady/notebook/iReady_module_ingestion.ipynb): Module data ingestion notebook which depends on the the module class. The pipeline template automatically uploads this notebook upon importing. 
 4. [PowerBI template](https://github.com/microsoft/OpenEduAnalytics/tree/main/modules/Digital_Learning_Apps_and_Platforms/iReady/powerbi): A Power BI template which explores data in a basic way. The Power BI file is pre-loaded with test data making it easy to quickly interact with i-Ready data. See instructions on the [module PowerBI page](https://github.com/microsoft/OpenEduAnalytics/tree/main/modules/Digital_Learning_Apps_and_Platforms/iReady/powerbi) to switch the dashboard data source to direct query from your Synapse workspace. Screenshots of the Power BI template are below.
 
-<strong><em>[PICTURES NEED TO BE UPDATED]</strong></em>
-
-Dashboard Explanation  | Dashboard Usage Summary
+Dashboard Explanation  | Dashboard Student Lesson Results Summary
 :-------------------------:|:-------------------------:
-![](https://github.com/microsoft/OpenEduAnalytics/blob/main/modules/Digital_Learning_Apps_and_Platforms/Clever/docs/images/Clever%20Module%20Explanation%20Page.png) |  ![](https://github.com/microsoft/OpenEduAnalytics/blob/main/modules/Digital_Learning_Apps_and_Platforms/Clever/docs/images/Clever%20Module%20Dashboard%20Sample.png)  
+![](https://github.com/cstohlmann/oea-iready-module/blob/main/docs/images/iReady%20Module%20Dashboard%20Explanation.png) |  ![](https://github.com/cstohlmann/oea-iready-module/blob/main/docs/images/iReady%20Module%20Dashboard%20p1.png)  
 
 ## Additional Information
 
