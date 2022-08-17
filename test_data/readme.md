@@ -17,6 +17,9 @@ This module includes artifically generated data which matches the format of the 
 ### [Comprehensive Student Lesson Activity with Standards ELA Table](https://github.com/microsoft/OpenEduAnalytics/blob/main/modules/Digital_Learning_Apps_and_Platforms/iReady/test_data/test_data/comprehensive_student_lesson_activity_with_standards_ela/ela.csv)
 ### [Comprehensive Student Lesson Activity with Standards Math Table](https://github.com/microsoft/OpenEduAnalytics/blob/main/modules/Digital_Learning_Apps_and_Platforms/iReady/test_data/test_data/comprehensive_student_lesson_activity_with_standards_math/math.csv)
 
+<details><summary>Expand Data Dictionary for: Comprehensive Student Lesson Activity with Standards</summary>
+<p>
+
 |Column Name | Data Type | Description |
 |-----------|-----------|-----------|
 | Last Name | String | The surname of the student. |
@@ -50,8 +53,14 @@ Notes:
 
 1) The "Comprehensive Student Lesson Activity with Standards ELA Table" and "Comprehensive Student Lesson Activity with Standards Math Table" have the exact same columns, though the data pertaining to the subject areas differ.
 
+</p>
+</details>
+
 ### [Personalized Instruction by Lesson ELA Table](https://github.com/microsoft/OpenEduAnalytics/blob/main/modules/Digital_Learning_Apps_and_Platforms/iReady/test_data/test_data/personalized_instruction_by_lesson_ela/ela.csv)
 ### [Personalized Instruction by Lesson Math Table](https://github.com/microsoft/OpenEduAnalytics/blob/main/modules/Digital_Learning_Apps_and_Platforms/iReady/test_data/test_data/personalized_instruction_by_lesson_math/math.csv)
+
+<details><summary>Expand Data Dictionary for: Personalized Instruction by Lesson</summary>
+<p>
 
 |Column Name | Data Type | Description |
 |-----------|-----------|-----------|
@@ -83,8 +92,14 @@ Notes:
 
 1) The "Personalized Instruction by Lesson ELA Table" and "Personalized Instruction by Lesson Math Table" have the exact same columns, though the data pertaining to the subject areas differ.
 
+</p>
+</details>
+
 ### [Diagnostic and Instruction ELA YTD Window Table](https://github.com/microsoft/OpenEduAnalytics/blob/main/modules/Digital_Learning_Apps_and_Platforms/iReady/test_data/test_data/diagnostic_and_instruction_ela_ytd_window/ela.csv)
 ### [Diagnostic and Instruction Math YTD Window Table](https://github.com/microsoft/OpenEduAnalytics/blob/main/modules/Digital_Learning_Apps_and_Platforms/iReady/test_data/test_data/diagnostic_and_instruction_math_ytd_window/math.csv)
+
+<details><summary>Expand Data Dictionary for: Diagnostic and Instruction YTD Window</summary>
+<p>
 
 |Column Name | Data Type | Description |
 |-----------|-----------|-----------|
@@ -149,7 +164,13 @@ Notes:
     - Number and Operations, Algebra and Algebraic Thinking, Measurement and Data, and Geometry.
 4) With the last "Instruction:" section of columns (outlined above) both tables include an "Overall" section, which precedes the breakdown of subject domains.
 
+</p>
+</details>
+
 ### [Diagnostic Results ELA Table](https://github.com/microsoft/OpenEduAnalytics/blob/main/modules/Digital_Learning_Apps_and_Platforms/iReady/test_data/test_data/diagnostic_results_ela/ela.csv)
+
+<details><summary>Expand Data Dictionary for: Diagnostic Results ELA</summary>
+<p>
 
 |Column Name | Data Type | Description |
 |-----------|-----------|-----------|
@@ -200,7 +221,13 @@ Notes:
 |:-------------------------:|
 | ![](https://github.com/microsoft/OpenEduAnalytics/blob/main/modules/Digital_Learning_Apps_and_Platforms/Clever/docs/images/test_data_resourceusage.png)  |
 
+</p>
+</details>
+
 ### [Diagnostic Results Math Table](https://github.com/microsoft/OpenEduAnalytics/blob/main/modules/Digital_Learning_Apps_and_Platforms/iReady/test_data/test_data/diagnostic_results_math/math.csv)
+
+<details><summary>Expand Data Dictionary for: Diagnostic Results Math</summary>
+<p>
 
 |Column Name | Data Type | Description |
 |-----------|-----------|-----------|
@@ -243,3 +270,6 @@ Notes:
 | [CHANGE PICTURE] Diagnostic Results Test Data  | 
 |:-------------------------:|
 | ![](https://github.com/microsoft/OpenEduAnalytics/blob/main/modules/Digital_Learning_Apps_and_Platforms/Clever/docs/images/test_data_resourceusage.png)  |
+
+</p>
+</details>
