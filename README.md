@@ -2,6 +2,8 @@
 
 [iReady](https://www.curriculumassociates.com/programs/i-ready-assessment) offers a variety of assessments for K-12 students, which tracks learning progress in reading and mathematics, breakdowns of assessment material, and assessment scoring. This iReady OEA module provides ingestion and processing of [Diagnostic Assessment](https://www.curriculumassociates.com/programs/i-ready-assessment/diagnostic) and [Personalized Instruction Assessment](https://www.curriculumassociates.com/programs/i-ready-learning/personalized-instruction) data. Data is retrieved from on-premises servers through the use of pipelines; this data is expected to be manually downloaded and uploaded to these servers. iReady Assessment data will enable education leaders to see the results of pedagogical practices impactfulness on student learning. 
 
+![alt text](https://github.com/cstohlmann/oea-iready-module/blob/main/docs/images/iReady%20landing%20readme%20picture.png)
+
 ## Problem Statement and Module Impact
 
 Collecting data related to student learning progress and results is critical in evaluating the success and areas-of-growth for teachers. As learning styles are increasingly changing, understanding the impact of various resources students use is fundamental to supporting student success.
