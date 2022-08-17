@@ -26,7 +26,7 @@ There are two buttons: the ELA button summarizes the student lesson results in E
 
 This Power BI data module consists of the eight Clever Participation Report tables: comprehensive_student_lesson_activity_with_standards_ela_pseudo, comprehensive_student_lesson_activity_with_standards_math_pseudo, diagnostic_and_instruction_ela_ytd_window_pseudo, diagnostic_and_instruction_math_ytd_window_pseudo, diagnostic_results_ela_pseudo, diagnostic_results_math_pseudo, personalized_instruction_by_lesson_ela_pseudo, and personalized_instruction_by_lesson_math_pseudo. 
 
-![Data Model](https://github.com/microsoft/OpenEduAnalytics/blob/main/modules/Digital_Learning_Apps_and_Platforms/Clever/docs/images/star%20schema%20for%20Clever%20Dashboard.png)
+![Data Model](https://github.com/cstohlmann/oea-iready-module/blob/main/docs/images/iReady%20Module%20Dashboard%20Data%20Model.png)
 
 
 ## Power BI Setup Instructions
