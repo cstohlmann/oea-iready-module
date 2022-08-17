@@ -1,6 +1,6 @@
 # Power BI Template
 
-<strong><em>[CHANGE THESE LINKS]</strong></em>
+<strong><em>[CHANGE THE LINKS IN THIS SECTION]</strong></em>
 
 The iReady module Power BI template enables users to quickly explore iReady Assessment Reports data. There are two options for exploring this module Power BI template.
 - [Power BI with test data](https://github.com/microsoft/OpenEduAnalytics/blob/main/modules/Digital_Learning_Apps_and_Platforms/iReady/powerbi/Clever%20Module%20Dashboard%20TestData.pbix): Power BI templated with module test data imported locally. 
@@ -10,19 +10,21 @@ See [Power BI setup instructions](https://github.com/microsoft/OpenEduAnalytics/
 
 ## Dashboard Explanation
 
-The iReady module Power BI template consists of a single dashboard which summarizes student lesson learning progress.
+The iReady module Power BI template consists of a single dashboard which summarizes student lesson learning progress. 
 
-#### Student Lesson Activity Results Summary Dashboard:
-- Clever App Use and Logins by School - shows a breakdown of the school-averages of app/resource use and logins per student in the education system.
-- Top 5 Resources Used by Students per School - shows a breakdown of the top 5 apps/resources used, distinctly counting by student IDs, per school in the education system.
-- Student Clever Logins and Usage Over Time - shows the aggregate data for activities (logins and apps/resources accessed) of students, over a particular day.
-- Top Apps Used - shows the aggregate data for all apps/resources accessed by students, using a treemap.
+There are two buttons: the ELA button summarizes the student lesson results in ELA, while the Math button summarizes the student lesson results in Math, independently.
 
-![App Usage Summary](https://github.com/microsoft/OpenEduAnalytics/blob/main/modules/Digital_Learning_Apps_and_Platforms/Clever/docs/images/Clever%20Module%20Dashboard%20Sample.png)
+#### Student Lesson Results Summary Dashboard:
+- <em>Lesson Results by Lesson Grade-Level compared to Student Grade</em> - shows a table that breaks-down the student grades (i.e. K, 1, 2) compared to the lesson grade-level, by distinctly counting the number of students that passed or failed a lesson.
+- <em>Comprehensive Student Lesson Activity Passing by (ELA or Math) Learning Domains</em> - shows a breakdown for the 6 lesson domains of ELA or the 4 lesson domains of Math, showcasing the passing or non-passing lesson results within each domain. The count comes from all lessons taken by all students, and the student results of those lessons.
+- <em>(ELA or Math) Lesson Results Breakdown by School</em> - shows the aggregate data lesson results of students, further broken-down by the school in which they attend. This accounts for all students within the education system, unless the School Filter is used.
+- <em>Student Lesson Results Over Time</em> - shows the aggregate data for lesson activity results (passed or not passed) of students, over a particular month.
+
+![Student Lesson Results Summary](https://github.com/cstohlmann/oea-iready-module/blob/main/docs/images/iReady%20Module%20Dashboard%20p1.png)
 
 ## Data Model
 
-This Power BI data module consists of the two Clever Participation Report tables: daily_participation_pseudo, and resource_usage_pseudo. 
+This Power BI data module consists of the eight Clever Participation Report tables: comprehensive_student_lesson_activity_with_standards_ela_pseudo, comprehensive_student_lesson_activity_with_standards_math_pseudo, diagnostic_and_instruction_ela_ytd_window_pseudo, diagnostic_and_instruction_math_ytd_window_pseudo, diagnostic_results_ela_pseudo, diagnostic_results_math_pseudo, personalized_instruction_by_lesson_ela_pseudo, and personalized_instruction_by_lesson_math_pseudo. 
 
 ![Data Model](https://github.com/microsoft/OpenEduAnalytics/blob/main/modules/Digital_Learning_Apps_and_Platforms/Clever/docs/images/star%20schema%20for%20Clever%20Dashboard.png)
 
