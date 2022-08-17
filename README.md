@@ -6,7 +6,7 @@
 
 ## Problem Statement and Module Impact
 
-Collecting data related to student learning progress and results is critical in evaluating the success and areas-of-growth for teachers. As learning styles are increasingly changing, understanding the impact of various resources students use is fundamental to supporting student success.
+Collecting data related to student learning progress and results is critical in evaluating the success and areas-of-growth for teachers. As learning styles are increasingly changing, understanding the impact of various teaching styles on students is fundamental to supporting student success.
 
 This i-Ready OEA module will aid K-12 education systems in bringing student learning progress data to their Azure data lake for analysis. The [module Synapse pipeline](https://github.com/microsoft/OpenEduAnalytics/tree/main/modules/Digital_Learning_Apps_and_Platforms/iReady/pipeline) will connect to on-premises servers by pulling csv files from assessment reports, to process the data so that this data is standardized and queryable. The [module Power BI template](https://github.com/microsoft/OpenEduAnalytics/tree/main/modules/Digital_Learning_Apps_and_Platforms/iReady/powerbi) allows users to immediately explore the data and start developing custom dashboards enabling education systems to better understand the trends in student learning progress. 
 
