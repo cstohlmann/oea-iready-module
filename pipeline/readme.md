@@ -24,16 +24,16 @@ Two sets of instructions are included:
 1. Complete the first steps of the [iReady module setup instructions](https://github.com/microsoft/OpenEduAnalytics/tree/main/modules/Digital_Learning_Apps_and_Platforms/iReady#module-setup-instructions)
 2. Download the [iReady pipeline template](https://github.com/microsoft/OpenEduAnalytics/blob/main/modules/Digital_Learning_Apps_and_Platforms/iReady/pipeline/iready_pipeline_template.zip) locally to your computer.
 3. Import the pipeline template to your Synapse workspace.
-<img src="https://github.com/cviddenKwantum/OpenEduAnalytics/blob/main/modules/Digital_Learning_Apps_and_Platforms/Clever/docs/images/pipeline%20template%20upload.png" width="600">
-5. Assign the Synapse linked services needed to support the pipeline template.
-<img src="https://github.com/cviddenKwantum/OpenEduAnalytics/blob/main/modules/Digital_Learning_Apps_and_Platforms/Clever/docs/images/pipeline%20linked%20services.png" width="600">
-6. Change the iReady_main_pipeline storageAccount parameter to be your storage account name.
-<img src="https://github.com/cviddenKwantum/OpenEduAnalytics/blob/main/modules/Digital_Learning_Apps_and_Platforms/Clever/docs/images/pipeline%20para%20storage%20account.png" width="600">
-7. Select a spark pool for the ingest_into_stage2p_and_2np notebook.
-<img src="https://github.com/cviddenKwantum/OpenEduAnalytics/blob/main/modules/Digital_Learning_Apps_and_Platforms/Clever/docs/images/pipeline%20spark%20pool.png" width="600">
-8. Trigger the pipeline mannually.
+<img src="https://github.com/cstohlmann/oea-iready-module/blob/main/docs/images/Test%20Data%20Pipeline%20Instructions_1.png" width="600">
+4. Assign the Synapse linked services needed to support the pipeline template.
+<img src="https://github.com/cstohlmann/oea-iready-module/blob/main/docs/images/Test%20Data%20Pipeline%20Instructions_2.png" width="600">
+5. Change the iReady_pipeline_template storageAccount parameter to be your storage account name.
+<img src="https://github.com/cstohlmann/oea-iready-module/blob/main/docs/images/Test%20Data%20Pipeline%20Instructions_3.png" width="600">
+6. Select a spark pool for the ingest_into_stage2p_and_2np notebook.
+<img src="https://github.com/cstohlmann/oea-iready-module/blob/main/docs/images/Test%20Data%20Pipeline%20Instructions_4.png" width="600">
+7. Trigger the pipeline mannually.
 <img src="https://github.com/cviddenKwantum/OpenEduAnalytics/blob/main/modules/Digital_Learning_Apps_and_Platforms/Clever/docs/images/pipeline%20trigger.png" width="600">
-9. Once the pipeline has successfully executed, verify that:
+8. Once the pipeline has successfully executed, verify that:
 
 - Data has landed in Stage 1np
 <img src="https://github.com/cviddenKwantum/OpenEduAnalytics/blob/main/modules/Digital_Learning_Apps_and_Platforms/Clever/docs/images/pipeline%20land%20stage1.png" width="600">
