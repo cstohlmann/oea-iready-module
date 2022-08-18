@@ -31,7 +31,7 @@ This module includes artifically generated data which matches the format of the 
 | Subject | String | The subject of the lesson (defaulted to "Reading" or "Math" depending on the table). |
 | Domain | String | The domain of the lesson; area of learning in the context of the subject area (i.e. Phonics, Comprehension, High-Frequency Words, Phonological Awareness, Vocabulary, Numbers and Operations, Algebra, Measurement and Data, or Geometry). |
 | Lesson Grade | String | The iReady-identified grade-level of the lesson. |
-| Lesson Level | String | An indicator ("Early", "Mid", "Late", or "Extra") of how the lesson compares to the student, based on the student's grade and the lesson's grade-level <strong><em>[?? UNSURE DUE TO LACK OF DOCUMENTATION]</strong></em>|
+| Lesson Level | String | An indicator ("Early", "Mid", "Late", or "Extra") of how the lesson compares to the student, based on the student's grade and the lesson's grade-level. |
 | Lesson ID | String | The iReady ID of the associated lesson. |
 | Lesson Name | String | The name of lesson. |
 | Lesson Objective | String | The learning objective(s) outlined from the lesson. |
@@ -45,9 +45,9 @@ This module includes artifically generated data which matches the format of the 
 | Standard Code | String | An abbreviated code for the state standard, to which the the lesson belongs. |
 | Standard Text | String | A more in-depth identification of the specific standard, to which the lesson belongs. |
 
-| [CHANGE PICTURE] Comprehensive Student Lesson Activity with Standards Test Data  | 
+| Comprehensive Student Lesson Activity with Standards Test Data  | 
 |:-------------------------:|
-| ![](https://github.com/microsoft/OpenEduAnalytics/blob/main/modules/Digital_Learning_Apps_and_Platforms/Clever/docs/images/test_data_dailypart.png)  |
+| ![](https://github.com/cstohlmann/oea-iready-module/blob/main/docs/images/test_data_screenshots/iReady_test_data_snapshot_comprehensive.png)  |
 
 Notes: 
 
@@ -73,7 +73,7 @@ Notes:
 | Subject | String | The subject of the lesson (defaulted to "Reading" or "Math" depending on the table). |
 | Domain | String | The domain of the lesson; area of learning in the context of the subject area (i.e. Phonics, Comprehension, High-Frequency Words, Phonological Awareness, Vocabulary, Numbers and Operations, Algebra, Measurement and Data, or Geometry). |
 | Lesson Grade | String | The iReady-identified grade-level of the lesson. |
-| Lesson Level | String | An indicator ("Early", "Mid", "Late", or "Extra") of how the lesson compares to the student, based on the student's grade and the lesson's grade-level <strong><em>[?? UNSURE DUE TO LACK OF DOCUMENTATION]</strong></em>|
+| Lesson Level | String | An indicator ("Early", "Mid", "Late", or "Extra") of how the lesson compares to the student, based on the student's grade and the lesson's grade-level. |
 | Lesson ID | String | The iReady ID of the associated lesson. |
 | Lesson Name | String | The name of lesson. |
 | Lesson Objective | String | The learning objective(s) outlined from the lesson. |
@@ -84,9 +84,9 @@ Notes:
 | Passed or Not Passed | String | An indicator ("Passed" or "Not Passed") of whether the student passed the lesson, based on their score exceeds or fails to meet the lesson-score-threshold. |
 | Teacher-Assigned Lesson | String | An indicator ("Y" or "N") of whether the student's teacher assigned the lesson to the student. |
 
-| [CHANGE PICTURE] Personalized Instruction by Lesson Test Data  | 
+| Personalized Instruction by Lesson Test Data  | 
 |:-------------------------:|
-| ![](https://github.com/microsoft/OpenEduAnalytics/blob/main/modules/Digital_Learning_Apps_and_Platforms/Clever/docs/images/test_data_resourceusage.png)  |
+| ![](https://github.com/cstohlmann/oea-iready-module/blob/main/docs/images/test_data_screenshots/iReady_test_data_snapshot_personalized.png)  |
 
 Notes: 
 
@@ -150,9 +150,9 @@ Notes:
 | Instruction: <strong>(Subject Domain)</strong> Pass Rate (\%) | Integer | The total pass rate percentage of the student in lessons related to that subject domain (or overall).  |
 | Instruction: <strong>(Subject Domain)</strong> Time on Task (min) | Integer | The total time, in minutes, spent on the lesson in that subject domain (or overall). |
 
-| [CHANGE PICTURE] Diagnostic and Instruction YTD Window Test Data  | 
+| Diagnostic and Instruction YTD Window Test Data  | 
 |:-------------------------:|
-| ![](https://github.com/microsoft/OpenEduAnalytics/blob/main/modules/Digital_Learning_Apps_and_Platforms/Clever/docs/images/test_data_resourceusage.png)  |
+| ![](https://github.com/cstohlmann/oea-iready-module/blob/main/docs/images/test_data_screenshots/iReady_test_data_snapshot_diagnostic_and_instruction.png)  |
 
 Notes: 
 
@@ -203,9 +203,9 @@ Notes:
 | Mid On Grade Level Scale Score | Integer | An indicator of the median grade level scale score. |
 | Reading Difficulty Indicator (Y/N) |  | An indicator ("Y" or "N") of whether the student has been flagged by i-Ready for having difficulties with reading. |
 
-| [CHANGE PICTURE] Diagnostic Results ELA Test Data  | 
+| Diagnostic Results ELA Test Data  | 
 |:-------------------------:|
-| ![](https://github.com/microsoft/OpenEduAnalytics/blob/main/modules/Digital_Learning_Apps_and_Platforms/Clever/docs/images/test_data_resourceusage.png)  |
+| ![](https://github.com/cstohlmann/oea-iready-module/blob/main/docs/images/test_data_screenshots/iReady_test_data_snapshot_diagnostic_results.png)  |
 
 Notes:
 
@@ -249,9 +249,9 @@ Notes:
 | Annual Stretch Growth Measure | Integer |	An indicator of the yearly expected stretch growth. |
 | Mid On Grade Level Scale Score | Integer | An indicator of the median grade level scale score. |
 
-| [CHANGE PICTURE] Diagnostic Results Math Test Data  | 
+| Diagnostic Results Math Test Data  | 
 |:-------------------------:|
-| ![](https://github.com/microsoft/OpenEduAnalytics/blob/main/modules/Digital_Learning_Apps_and_Platforms/Clever/docs/images/test_data_resourceusage.png)  |
+| ![](https://github.com/cstohlmann/oea-iready-module/blob/main/docs/images/test_data_screenshots/iReady_test_data_snapshot_diagnostic_results.png)  |
 
 Notes:
 
