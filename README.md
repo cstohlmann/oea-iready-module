@@ -36,7 +36,7 @@ This module imports data which matches the format of four [i-Ready Diagnostic an
 - <strong>Diagnostic Results Report</strong> provides the implications and i-Ready analyses of student diagnostic assessments. These include metrics used for gauging the successes/struggles of student learning (e.g. [Annual Stretch Growth Measure](https://www.curriculumassociates.com/access-and-equity/providing-a-path-to-proficiency-for-every-student)). The assessment data also provides test results in specific areas of student-learning domains within ELA and Math. 
 - <strong>Personalized Instruction by Lesson Report</strong> provides the results surrounding student personalized instruction assessments. This table essentially serves as an overview of the <em>Comprehensive Student Lesson Activity with Standards</em> tables, without the matching of state standards.
 
-See the [module test data page](https://github.com/microsoft/OpenEduAnalytics/tree/main/modules/Digital_Learning_Apps_and_Platforms/iReady/test_data) for details on data format and contents.
+All test data comes in the format of CSV files, which is the format as the exported i-Ready data tables. See the [module test data page](https://github.com/microsoft/OpenEduAnalytics/tree/main/modules/Digital_Learning_Apps_and_Platforms/iReady/test_data) for additional details on data format and contents.
 
 ## Module Components
 
