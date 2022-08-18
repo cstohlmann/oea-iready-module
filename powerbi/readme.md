@@ -2,7 +2,7 @@
 
 <strong><em>[CHANGE THE LINKS IN THIS SECTION]</strong></em>
 
-The iReady module Power BI template enables users to quickly explore iReady Assessment Reports data. There are two options for exploring this module Power BI template.
+The i-Ready module Power BI template enables users to quickly explore iReady Assessment Reports data. There are two options for exploring this module Power BI template.
 - [Power BI with test data](https://github.com/microsoft/OpenEduAnalytics/blob/main/modules/Digital_Learning_Apps_and_Platforms/iReady/powerbi/Clever%20Module%20Dashboard%20TestData.pbix): Power BI templated with module test data imported locally. 
 - [Power BI with direct query](https://github.com/microsoft/OpenEduAnalytics/blob/main/modules/Digital_Learning_Apps_and_Platforms/iReady/powerbi/Clever%20Module%20Dashboard%20DirectQuery.pbix): Power BI template connected to a Synapse workspace data source. See instructions below to setup.
 
@@ -10,7 +10,7 @@ See [Power BI setup instructions](https://github.com/microsoft/OpenEduAnalytics/
 
 ## Dashboard Explanation
 
-The iReady module Power BI template consists of a single dashboard which summarizes student lesson learning progress. 
+The i-Ready module Power BI template consists of a single dashboard which summarizes student lesson learning progress. 
 
 There are two buttons: the ELA button summarizes the student lesson results in ELA, while the Math button summarizes the student lesson results in Math, independently.
 
@@ -24,7 +24,7 @@ There are two buttons: the ELA button summarizes the student lesson results in E
 
 ## Data Model
 
-This Power BI data module consists of the eight Clever Participation Report tables: comprehensive_student_lesson_activity_with_standards_ela_pseudo, comprehensive_student_lesson_activity_with_standards_math_pseudo, diagnostic_and_instruction_ela_ytd_window_pseudo, diagnostic_and_instruction_math_ytd_window_pseudo, diagnostic_results_ela_pseudo, diagnostic_results_math_pseudo, personalized_instruction_by_lesson_ela_pseudo, and personalized_instruction_by_lesson_math_pseudo. 
+This Power BI data module consists of the eight i-Ready Diagnostic and Instruction Assessment tables: comprehensive_student_lesson_activity_with_standards_ela_pseudo, comprehensive_student_lesson_activity_with_standards_math_pseudo, diagnostic_and_instruction_ela_ytd_window_pseudo, diagnostic_and_instruction_math_ytd_window_pseudo, diagnostic_results_ela_pseudo, diagnostic_results_math_pseudo, personalized_instruction_by_lesson_ela_pseudo, and personalized_instruction_by_lesson_math_pseudo. 
 
 ![Data Model](https://github.com/cstohlmann/oea-iready-module/blob/main/docs/images/iReady%20Module%20Dashboard%20Data%20Model.png)
 
