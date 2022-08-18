@@ -129,26 +129,26 @@ Notes:
 | Diagnostic: Start Date (x) | Date | The start date of the diagnostic assessment. |
 | Diagnostic: Completion Date (x) | Date | The completion date of the diagnostic assessment. |
 | Diagnostic: Time on Task (min) (x) | Integer | The total time spent on the diagnostic assessment (in minutes). |
-| Diagnostic: Rush Flag (x) | String | An indicator of the rush flag association for the student after completion of the diagnostic assessment. |
-| Diagnostic: Overall Scale Score (x) | Integer | . |
-| Diagnostic: Overall Placement (x) | String | . |
-| Diagnostic: Percentile (x) | Integer | . |
-| Diagnostic: Overall Relative Placement (x) | String | . |
-| Diagnostic: Tier (x) | String | . |
-| xxx | xxx | xxx |
-| Diagnostic: (_) Measure (x) | String | xxx |
-| Diagnostic: (_) Range (x) | String | xxx |
-| Diagnostic: Grouping (x) | String | xxx |
-| Diagnostic: Language (x) | String | xxx |
-| Diagnostic: <strong>(Subject Domain)</strong> Scale Score (x) | Integer | xxx |
-| Diagnostic: <strong>(Subject Domain)</strong> Placement (x) | String | xxx |
-| Diagnostic: <strong>(Subject Domain)</strong> Relative Placement (x) | String | xxx |
-| xxx | xxx | xxx |
-| Instruction: <strong>(Subject Domain)</strong> Lessons Passed | Integer | xxx |
-| Instruction: <strong>(Subject Domain)</strong> Lessons Not Passed | Integer | xxx |
-| Instruction: <strong>(Subject Domain)</strong> Lessons Completed | Integer | xxx |
-| Instruction: <strong>(Subject Domain)</strong> Pass Rate (\%) | Integer | xxx |
-| Instruction: <strong>(Subject Domain)</strong> Time on Task (min) | Integer | xxx |
+| Diagnostic: Rush Flag (x) | String | An indicator of the rush flag association with the student after completion of the diagnostic assessment. |
+| Diagnostic: Overall Scale Score (x) | Integer | The overall resulting scale score of the student from the diagnostic assessment (i.e. considering all subject domain scale scores). |
+| Diagnostic: Overall Placement (x) | String | The overall resulting i-Ready-identified placement of the student from the diagnostic assessment (i.e. considering all subject domain scale scores). |
+| Diagnostic: Percentile (x) | Integer | The percentile associated with the student from the diagnostic assessment results. |
+| Diagnostic: Overall Relative Placement (x) | String | The overall resulting i-Ready-identified relative placement of the student from the diagnostic assessment (i.e. considering all subject domain scale scores). |
+| Diagnostic: Tier (x) | String | The tier associated with the student from the diagnostic assessment results. |
+| xxxxx | xxxxx | xxxxx |
+| Diagnostic: (_) Measure (x) | String | The overall Lexile or Quantile measure (depending on whether the ELA or Math table, respectively) of the student, based on those diagnostic assessment results. |
+| Diagnostic: (_) Range (x) | String | The overall Lexile or Quantile range (depending on whether the ELA or Math table, respectively) of the student, based on those diagnostic assessment results. |
+| Diagnostic: Grouping (x) | String | The grouping of the student, based on those diagnostic assessment results.  |
+| Diagnostic: Language (x) | String | The language in which the student took the diagnostic assessment. |
+| Diagnostic: <strong>(Subject Domain)</strong> Scale Score (x) | Integer | The resulting scale score of the student, in that particular subject domain from the diagnostic assessment. |
+| Diagnostic: <strong>(Subject Domain)</strong> Placement (x) | String | The resulting i-Ready-identified placement of the student, in that particular subject domain from the diagnostic assessment. |
+| Diagnostic: <strong>(Subject Domain)</strong> Relative Placement (x) | String | The resulting i-Ready-identified relative placement of the student, in that particular subject domain from the diagnostic assessment. |
+| xxxxx | xxxxx | xxxxx |
+| Instruction: <strong>(Subject Domain)</strong> Lessons Passed | Integer | The total number of lessons passed by the student, in that subject domain (or overall). |
+| Instruction: <strong>(Subject Domain)</strong> Lessons Not Passed | Integer | The total number of lessons not passed by the student, in that subject domain (or overall). |
+| Instruction: <strong>(Subject Domain)</strong> Lessons Completed | Integer | The total number of lessons completed by the student, in that subject domain (or overall). |
+| Instruction: <strong>(Subject Domain)</strong> Pass Rate (\%) | Integer | The total pass rate percentage of the student in lessons related to that subject domain (or overall).  |
+| Instruction: <strong>(Subject Domain)</strong> Time on Task (min) | Integer | The total time, in minutes, spent on the lesson in that subject domain (or overall). |
 
 | [CHANGE PICTURE] Diagnostic and Instruction YTD Window Test Data  | 
 |:-------------------------:|
@@ -156,10 +156,11 @@ Notes:
 
 Notes: 
 
-1) Anything in the above table marked with (x) indicates that the "x" is either replaced with "Most Recent", "1", "2", "3", "4", or "5". 
+1) Rows in the table marked with "xxxxx" for their section indicate a separate section of the table where column sections are grouped together.
+2) Anything in the above table marked with (x) indicates that the "x" is either replaced with "Most Recent", "1", "2", "3", "4", or "5". 
     - There is a section columns corresponding to each diagnostic assessment indicator.
 2) Anything in the above table marked with (\_) indicates that the "\_" is either replaced with "Lexile" or "Quantile" depending on the ELA or Math table, respectively.
-3) Anything in the above table marked with <strong>(Subject Domain)</strong> indicates that the entire parenthesis is to be replaced with on of the two sets of domains (the ELA table corresponds with the first set, and the Math table corresponds with the second set):
+3) Anything in the above table marked with <strong>(Subject Domain)</strong> indicates that the entire parenthesis is to be replaced with one of the two sets of domains (the ELA table corresponds with the first set, and the Math table corresponds with the second set):
     - Phonological Awareness, Phonics, High-Frequency Words, Vocabulary, Reading Comprehension: Literature, and Reading Comprehension: Informational Text.
     - Number and Operations, Algebra and Algebraic Thinking, Measurement and Data, and Geometry.
 4) With the last "Instruction:" section of columns (outlined above) both tables include an "Overall" section, which precedes the breakdown of subject domains.
@@ -180,47 +181,37 @@ Notes:
 | Student Grade | String | The grade of the student in the education system (e.g. K, 1, 2). |
 | Academic Year | String | The academic year of the student at the time of lesson completion. |
 | School | String | The name of the school attended by the student. |
-| Start Date | Date |	Date the diagnostic test was started by the student. |
-| Completion Date | Date | Date the diagnostic test was completed by the student. |
-| Diagnostic used to establish Growth Measures (Y/N) | String |	An indicator ("Y" or "N") of whether the diagnostic test is used to establish growth measures of the student. |
-| Most Recent Diagnostic (Y/N) | String |	<strong><em>[?? UNSURE]</strong></em> |
+| Start Date | Date | Date the diagnostic assessment was started by the student. |
+| Completion Date | Date | Date the diagnostic assessment was completed by the student. |
+| Diagnostic used to establish Growth Measures (Y/N) | String |	An indicator ("Y" or "N") of whether the diagnostic assessment is used to establish growth measures of the student. |
+| Most Recent Diagnostic (Y/N) | String | An indicator ("Y" or "N") of whether that particular diagnostic assessment was the most recent diagnostic assessment taken by the student.  |
 | Duration (min) | Integer | The total number of minutes the student spent on the diagnostic test. |
-| Rush Flag | String |	<strong><em>[?? UNSURE]</strong></em> |
-| Overall Scale Score |  |	 |
-| Overall Placement |  |	 |
-| Overall Relative Placement |  |	 |
-| Percentile |  |	 |
-| Grouping |  |	 |
-| Lexile Measure |  |	 |
-| Lexile Range |  |	 |
-| Phonological Awareness Scale Score |  |	 |
-| Phonological Awareness Placement |  |	 |
-| Phonological Awareness Relative Placement |  |	 |
-| Phonics Scale Score |  |	 |
-| Phonics Placement |  |	 |
-| Phonics Relative Placement |  |	 |
-| High-Frequency Words Scale Score |  |	 |
-| High-Frequency Words Placement |  |	 |
-| High-Frequency Words Relative Placement |  |	 |
-| Vocabulary Scale Score |  |	 |
-| Vocabulary Placement |  |	 |
-| Vocabulary Relative Placement |  |	 |
-| Reading Comprehension: Literature Scale Score |  |	 |
-| Reading Comprehension: Literature Placement |  |	 |
-| Reading Comprehension: Literature Relative Placement |  |	 |
-| Reading Comprehension: Informational Text Scale Score |  |	 |
-| Reading Comprehension: Informational Text Placement |  |	 |
-| Reading Comprehension: Informational Text Relative Placement |  |	 |
-| Diagnostic Language | |	 |
-| Annual Typical Growth Measure |  |	 |
-| Annual Stretch Growth Measure |  |	 |
-| Mid On Grade Level Scale Score |  |	 |
-| Reading Difficulty Indicator (Y/N) |  |	 |
+| Rush Flag | String | An indicator of the rush flag association with the student after completion of the diagnostic assessment. |
+| Overall Scale Score | Integer | The overall resulting scale score of the student from the diagnostic assessment (i.e. considering all subject domain scale scores). |
+| Overall Placement | String | The overall resulting i-Ready-identified placement of the student from the diagnostic assessment (i.e. considering all subject domain scale scores). |
+| Overall Relative Placement | String | The overall resulting i-Ready-identified relative placement of the student from the diagnostic assessment (i.e. considering all subject domain scale scores). |
+| Percentile | Integer | The percentile associated with the student from the diagnostic assessment results. |
+| Grouping | String | The grouping of the student, based on those diagnostic assessment results. |
+| Lexile Measure | String | The overall Lexile measure of the student, based on those diagnostic assessment results. |
+| Lexile Range | String |	The overall Lexile range of the student, based on those diagnostic assessment results. |
+| <strong>(Subject Domain)</strong> Scale Score | Integer |	The resulting scale score of the student, in that particular subject domain from the diagnostic assessment. |
+| <strong>(Subject Domain)</strong> Placement | String | The resulting i-Ready-identified placement of the student, in that particular subject domain from the diagnostic assessment. |
+| <strong>(Subject Domain)</strong> Relative Placement | String | The resulting i-Ready-identified relative placement of the student, in that particular subject domain from the diagnostic assessment. |
+| Diagnostic Language | String | The language in which the student took the diagnostic assessment. |
+| Annual Typical Growth Measure | Integer |	An indicator of the yearly expected typical growth. |
+| Annual Stretch Growth Measure | Integer |	An indicator of the yearly expected stretch growth. |
+| Mid On Grade Level Scale Score | Integer | An indicator of the median grade level scale score. |
+| Reading Difficulty Indicator (Y/N) |  | An indicator ("Y" or "N") of whether the student has been flagged by i-Ready for having difficulties with reading. |
 
-| [CHANGE PICTURE] Diagnostic Results Test Data  | 
+| [CHANGE PICTURE] Diagnostic Results ELA Test Data  | 
 |:-------------------------:|
 | ![](https://github.com/microsoft/OpenEduAnalytics/blob/main/modules/Digital_Learning_Apps_and_Platforms/Clever/docs/images/test_data_resourceusage.png)  |
 
+Notes:
+
+1) Anything in the above table marked with <strong>(Subject Domain)</strong> indicates that the entire parenthesis is to be replaced with the following set of subject domains:
+    - Phonological Awareness, Phonics, High-Frequency Words, Vocabulary, Reading Comprehension: Literature, and Reading Comprehension: Informational Text.
+    
 </p>
 </details>
 
@@ -237,39 +228,35 @@ Notes:
 | Student Grade | String | The grade of the student in the education system (e.g. K, 1, 2). |
 | Academic Year | String | The academic year of the student at the time of lesson completion. |
 | School | String | The name of the school attended by the student. |
-| Start Date | Date |	Date the diagnostic test was started by the student. |
-| Completion Date | Date | Date the diagnostic test was completed by the student. |
-| Diagnostic used to establish Growth Measures (Y/N) | String |	An indicator ("Y" or "N") of whether the diagnostic test is used to establish growth measures of the student. |
-| Most Recent Diagnostic (Y/N) | String |	<strong><em>[?? UNSURE]</strong></em> |
+| Start Date | Date | Date the diagnostic assessment was started by the student. |
+| Completion Date | Date | Date the diagnostic assessment was completed by the student. |
+| Diagnostic used to establish Growth Measures (Y/N) | String |	An indicator ("Y" or "N") of whether the diagnostic assessment is used to establish growth measures of the student. |
+| Most Recent Diagnostic (Y/N) | String | An indicator ("Y" or "N") of whether that particular diagnostic assessment was the most recent diagnostic assessment taken by the student.  |
 | Duration (min) | Integer | The total number of minutes the student spent on the diagnostic test. |
-| Rush Flag | String |	<strong><em>[?? UNSURE]</strong></em> |
-| Overall Scale Score |  |	 |
-| Overall Placement |  |	 |
-| Overall Relative Placement |  |	 |
-| Percentile |  |	 |
-| Grouping |  |	 |
-| Quantile Measure |  |	 |
-| Quantile Range |  |	 |
-| Number and Operations Scale Score |  |	 |
-| Number and Operations Placement |  |	 |
-| Number and Operations Relative Placement |  |	 |
-| Algebra and Algebraic Thinking Scale Score |  |	 |
-| Algebra and Algebraic Thinking Placement |  |	 |
-| Algebra and Algebraic Thinking Relative Placement |  |	 |
-| Measurement and Data Scale Score |  |	 |
-| Measurement and Data Placement |  |	 |
-| Measurement and Data Relative Placement |  |	 |
-| Geometry Scale Score |  |	 |
-| Geometry Placement |  |	 |
-| Geometry Relative Placement |  |	 |
-| Diagnostic Language |  |	 |
-| Annual Typical Growth Measure |  |	 |
-| Annual Stretch Growth Measure |  |	 |
-| Mid On Grade Level Scale Score |  |	 |
+| Rush Flag | String | An indicator of the rush flag association with the student after completion of the diagnostic assessment. |
+| Overall Scale Score | Integer | The overall resulting scale score of the student from the diagnostic assessment (i.e. considering all subject domain scale scores). |
+| Overall Placement | String | The overall resulting i-Ready-identified placement of the student from the diagnostic assessment (i.e. considering all subject domain scale scores). |
+| Overall Relative Placement | String | The overall resulting i-Ready-identified relative placement of the student from the diagnostic assessment (i.e. considering all subject domain scale scores). |
+| Percentile | Integer | The percentile associated with the student from the diagnostic assessment results. |
+| Grouping | String | The grouping of the student, based on those diagnostic assessment results. |
+| Lexile Measure | String | The overall Lexile measure of the student, based on those diagnostic assessment results. |
+| Lexile Range | String |	The overall Lexile range of the student, based on those diagnostic assessment results. |
+| <strong>(Subject Domain)</strong> Scale Score | Integer |	The resulting scale score of the student, in that particular subject domain from the diagnostic assessment. |
+| <strong>(Subject Domain)</strong> Placement | String | The resulting i-Ready-identified placement of the student, in that particular subject domain from the diagnostic assessment. |
+| <strong>(Subject Domain)</strong> Relative Placement | String | The resulting i-Ready-identified relative placement of the student, in that particular subject domain from the diagnostic assessment. |
+| Diagnostic Language | String | The language in which the student took the diagnostic assessment. |
+| Annual Typical Growth Measure | Integer |	An indicator of the yearly expected typical growth. |
+| Annual Stretch Growth Measure | Integer |	An indicator of the yearly expected stretch growth. |
+| Mid On Grade Level Scale Score | Integer | An indicator of the median grade level scale score. |
 
-| [CHANGE PICTURE] Diagnostic Results Test Data  | 
+| [CHANGE PICTURE] Diagnostic Results Math Test Data  | 
 |:-------------------------:|
 | ![](https://github.com/microsoft/OpenEduAnalytics/blob/main/modules/Digital_Learning_Apps_and_Platforms/Clever/docs/images/test_data_resourceusage.png)  |
 
+Notes:
+
+1) Anything in the above table marked with <strong>(Subject Domain)</strong> indicates that the entire parenthesis is to be replaced with the following set of subject domains:
+    - Number and Operations, Algebra and Algebraic Thinking, Measurement and Data, and Geometry.
+   
 </p>
 </details>
